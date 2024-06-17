@@ -1,0 +1,243 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: #dbb5b5;
+  color: white;
+  overflow-x: hidden;
+}
+
+.header {
+  color: white;
+}
+
+.nav-link,
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:visited {
+  font-weight: bold;
+  color: white;
+}
+
+.introduction {
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url(./images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.introduction-item {
+  padding: 25px;
+  margin: 25px;
+  font-size: 80px;
+}
+
+.introduction-item-description {
+  padding: 25px;
+  margin: 25px;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1e5d1;
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 50px 50px 50px 100px;
+}
+
+.about-intro-title {
+  color: palevioletred;
+  font-size: 60px;
+}
+
+.about-intro-description {
+  text-align: justify;
+  color: black;
+  font-size: 16px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+}
+.image > img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#experience {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.experience-intro {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 50px 50px 50px 100px;
+}
+
+.experience-intro-title {
+  color: palevioletred;
+  font-size: 60px;
+}
+
+.experience-item-devider {
+  border: dotted palevioletred 6px;
+  border-bottom: none;
+  width: 40%;
+  margin: 50px;
+}
+
+.experience-items {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.experience-item {
+  color: palevioletred;
+}
+
+.experience-item-description {
+  text-align: justify;
+  color: black;
+  padding-right: 150px;
+}
+
+#showcase {
+  background-color: #c39898;
+  display: flex;
+  flex-direction: column;
+}
+
+#showcase, h3, p {
+  text-align: center;
+}
+
+.showcase-intro {
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+}
+
+.work-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.work-items h3 {
+  text-decoration: underline;
+}
+
+.work-item-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  border: 6px dotted white;
+  margin: 10px 50px 50px 80px;
+}
+
+#contact {
+  font-family: Italic;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  background: url(./images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  color: white;
+}
+
+#bottom {
+  background-color: #d4bbbb;
+  text-align: center;
+  color: #bc7a7a;
+}
+
+.merienda-700 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 820px) {
+  .nav-link {
+    font-size: 10px;
+  }
+  .introduction-item {
+    font-size: 50px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .introduction-item-description {
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+  }
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  .about-intro {
+    padding: 20px;
+    width: 100%;
+  }
+  .about-intro-title {
+    font-size: 50px;
+  }
+  .image {
+    padding: 20px;
+  }
+  #experience {
+    flex-direction: column;
+  }
+  .experience-intro {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .experience-intro-title {
+    font-size: 50px;
+  }
+  .experience-items {
+    padding: 20px;
+  }
+  .experience-item-description {
+    padding-right: 0px;
+  }
+  .work-items {
+    flex-direction: column;
+  }
+  .work-item-image {
+    width: 350px;
+    height: 250px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .work-item {
+    padding: 20px;
+  }
+}
